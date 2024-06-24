@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án nhóm 8 </title>
+    
+    <style>
+       body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Màu nền tổng thể của trang */
+}
+
+/* Header */
+.section-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff4d4d;
+    z-index: 1000;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    align-items: center;
+}
+
+.section li {
+    list-style: none;
+}
+
+.section a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.section a:hover {
+    color: #ffcccc;
+}
+
+/* Lộ trình học */
+.lo_trinh_container {
+    background-color: #ff4d4d;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.lo_trinh_title {
+    color: aliceblue;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.lo_trinh_image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+/* Phần giới thiệu */
+.intro_part {
+    background-color: #f2f2f2;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.intro_part_title, .intro_part_title_2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.intro_table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro_table img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Chương trình Anh ngữ */
+.courses {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.courses_title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.courses_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.courses_table td {
+    padding: 20px;
+}
+
+.courses_table img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-block {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Đăng ký tư vấn */
+.registration {
+    background-color: white;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.registration-title {
+    margin-top: 10px;
+    color: #333;
+}
+
+.registration-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.registration-form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="submit"] {
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.submit_button {
+    width: 200px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background-color: #e60000;
+}
+
+/* Đội ngũ giảng viên */
+.teachers {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.teachers_title {
+    padding-top: 50px;
+}
+
+.teachers_content {
+    color: white;
+}
+
+.teacher_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teacher_card {
+    background-color: wheat;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.teacher_card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.teacher_name {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Nút làm bài test */
+.test_button {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 50px auto;
+    background-color: #ff4d4d;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none; /* Loại bỏ gạch chân khi hover */
+}
+
+.test_button:hover {
+    background-color: beige;
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <div class="section-container">           
+        <ul class="section">
+            <li><a class="why" href="ly-do-chon-acet.html">Tại sao chọn ACET</a></li>
+            <li><a class="programs" href="#">Chương trình Anh Ngữ</a></li>
+            <li><a class="news" href="index_news.html">Tin tức và sự kiện</a></li>
+            <li><a class="classrooms" href="#">My Ielts Classroom</a></li>
+            <li><a class="IDP" href="#">IDP Ielts Du học</a></li>
+            <li><a class="recruitment" href="#">Tuyển dụng</a></li>
+            <li><a class="search" href="#">Tìm kiếm</a></li>
+        </ul>
+    </div>  
+
+    <div class="lo_trinh_container">
+        <div class="lo_trinh_title">LỘ TRÌNH HỌC IELTS CHO NGƯỜI MỚI BẮT ĐẦU HIỆU QUẢ NHẤT</div> 
+        <img class="lo_trinh_image" src="./img/ielts.png" alt="Lộ Trình Học">
+    </div>
+
+    <div class="intro_part">                 
+        <h1 class="intro_part_title">ACET</h1>  
+        <h1 class="intro_part_title_2">ANH NGỮ HỌC THUẬT - GIÁO DỤC QUỐC TẾ</h1>
+        <div class="intro_table"> 
+            <section class="intro_part_content"> 
+                Là nhà tiên phong mang lại nền tảng Anh ngữ Học thuật (Academic English For International Education) với hơn 18 năm kinh nghiệm trong lĩnh vực đào tạo tiếng Anh và luyện thi IELTS theo tiêu chuẩn Úc tại Việt Nam. Tại ACET, chúng tôi luôn tâm niệm rằng học viên học tiếng Anh không chỉ là học một ngôn ngữ mới, mà còn học cách tư duy, khai phá kiến thức, học kỹ năng mềm và vốn sống để tự tin hòa nhập môi trường học tập và thành công trong môi trường làm việc toàn cầu.
+            </section>
+            <br>
+            <img src="./img/ielts_intro.jpg" alt="IELTS Introduction">      
+        </div>
+    </div>
+
+    <div class="courses">        
+        <h1 class="courses_title">CHƯƠNG TRÌNH ANH NGỮ</h1>
+        <div class="courses_table"> 
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/us_student.jpeg" alt="Anh Ngữ Học Thuật">
+                        <div class="text-block">ANH NGỮ HỌC THUẬT</div>
+                    </td>
+                    <td>
+                        <img src="img/us_student.jpeg" alt="Anh Ngữ Doanh Nghiệp">
+                        <div class="text-block">ANH NGỮ DOANH NGHIỆP</div>
+                    </td>
+                    <td>
+                        <img src="img/us_student.jpeg" alt="Anh Ngữ Giao Tiếp">
+                        <div class="text-block">ANH NGỮ GIAO TIẾP</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/us_student.jpeg" alt="Anh Ngữ Chuyên Nghiệp">
+                        <div class="text-block">ANH NGỮ CHUYÊN NGHIỆP</div>
+                    </td>
+                    <td>
+                        <img src="img/us_student.jpeg" alt="Anh Ngữ Trẻ Em">
+                        <div class="text-block">ANH NGỮ TRẺ EM</div>
+                    </td>
+                    <td>
+                        <img src="img/us_student.jpeg" alt="Luyện Thi IELTS">
+                        <div class="text-block">LUYỆN THI IELTS</div>
+                    </td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="registration">
+        <div class="registration-title">
+            <h1>ĐĂNG KÝ TƯ VẤN</h1>
+        </div>
+        <table class="registration-table"> 
+            <tr>
+                <td class="teacher_pointing">
+                    <img src="img/teacher_pointing.png" alt="Teacher Pointing">
+                </td> 
+                <td class="registration-form">  
+                    <form action="process-form.php" method="post">  
+                        <input type="text" placeholder="Họ và tên"  name="name">
+                        <br>
+                        <input type="text" placeholder="Tuổi (hỗ trợ lộ trình tư vấn)"   name="age">
+                        <br>
+                        <input type="text" placeholder="Số điện thoại"  name ="phone">
+                        <br>
+                        <input type="text" placeholder="Email" name="email"> 
+                        <br>
+                        <input type="text" placeholder="Khu vực" name="location">
+                        <br>
+                        <input type="submit" value="GỬI THÔNG TIN" class="submit_button" name=" first_button ">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="teachers">
+        <h1 class="teachers_title">ĐỘI NGŨ GIẢNG VIÊN</h1> 
+        <p class="teachers_content">ACET sở hữu đội ngũ giảng viên bản ngữ đến từ Anh, Úc, Mỹ có nhiều năm kinh nghiệm và chất lượng cao trong giảng dạy chương trình Anh ngữ Học thuật chuẩn Quốc Tế</p>
+        <div class="teacher_cards">
+            <div class="teacher_card">
+                <img src="img/bill gates.jpg" class="image_teacher" alt="Bill Gates">
+                <p class="teacher_name">Bill Gates</p>
+            </div>
+            <div class="teacher_card">
+                <img src="img/mark_zucker berg.jpg" class="image_teacher" alt="Mark Zuckerberg">
+                <p class="teacher_name">Mark Zuckerberg</p>
+            </div>
+            <div class="teacher_card">
+                <img src="img/jeff bezos.jpg" class="image_teacher" alt="Jeff Bezos">
+                <p class="teacher_name">Jeff Bezos</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <a class="test_button" href="index_test.html">LÀM BÀI TEST TRÌNH ĐỘ</a>
+    </div>
+
+    <script>  
+        const button = Document.getElementByID("  ")
+    
+    
+    </script>
+</body>
+</html>

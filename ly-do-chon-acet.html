@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ly-do-chon-acet.css">
+    <title>Lý do chọn ACET - Anh ngữ Học thuật</title>
+    <style>     
+        * {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.img-banner {
+  height: 303px;
+  width: 100%;
+  position: relative;
+}
+
+.img-banner>img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-banner .into-banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+.img-banner .title-banner-box {
+  width: 650px;
+  height: 90px;
+  border-bottom: 3px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-banner .title-banner-box .title-banner {
+  font-size: 68px;
+  color: #fff;
+}
+
+/* chỉnh sửa mũi tên trong banner */
+.box-arrow {
+  display: flex;
+}
+
+.menu-arr {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.menu-arr>.box-arrow-home .arrow-right-top,
+.menu-arr>.box-arrow-home .arrow-right-down {
+  border-right: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-arr>.box-arrow-home .arrow-right {
+  border-left: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-arr>.box-arrow-home .link-arrow {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* sau khi hover chuột vào home */
+.menu-arr .box-arrow-home:hover .link-arrow {
+  color: yellow;
+}
+
+.menu-arr>.box-arrow-home:hover .arrow-right-top,
+.menu-arr>.box-arrow-home:hover .arrow-right-down {
+  border-right: 10px solid red;
+  cursor: pointer;
+}
+
+.menu-arr>.box-arrow-home:hover .arrow-right {
+  border-left: 10px solid red;
+  cursor: pointer;
+}
+
+.menu-arr>.box-arrow-home:hover .link-arrow {
+  background-color: red;
+}
+
+/* css chung cho arr */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid red;
+}
+
+.arrow-right-top {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid red;
+}
+
+.arrow-right-down {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid red;
+}
+
+.link-arrow {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 11px;
+}
+
+/* thay đổi con trỏ chuột của arr cuối cùng */
+.menu-arr .box-arrow:last-child .link-arrow {
+  cursor: auto;
+}
+
+/* main nội dung chính */
+.main-center {
+  padding-top: 80px;
+  padding: 80px 145px;
+}
+
+.centered-text {
+  padding: 0px 15px;
+}
+
+.title-english-center {
+  margin-bottom: 30px;
+}
+
+.centered-text p {
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: #333333;
+}
+
+/* list item cơ hội */
+.list-items-co-hoi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-items-co-hoi .item-co-hoi {
+  display: flex;
+  gap: 30px;
+  padding: 35px 15px;
+  border-top: 1px solid black;
+}
+
+.list-items-co-hoi .img-item-co-hoi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.list-items-co-hoi .img-item-co-hoi img {
+  width: 100%;
+}
+
+.list-items-co-hoi .content-item-co-hoi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 3;
+}
+
+.list-items-co-hoi .content-item-co-hoi h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item-co-hoi-center p {
+  color: #333333;
+  line-height: 20px;
+}
+
+.paragraph-stretch {
+  margin-bottom: 20px;
+}
+
+.list-items-co-hoi>.item-co-hoi:last-child {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+/* lộ trình học */
+.contact{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.main-center div:nth-child(3) {
+  margin-top: 15px;
+}
+.img-lo-trinh {
+  width: 100%;
+}
+.form-container{
+  width: 320px;
+  border-radius: 10px;
+  border: 3px solid red;
+}
+.form-container .title-form-sign-up{
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  padding: 10px 30px;
+  font-weight: 700;
+  border-radius: 7px;
+  margin-bottom: 18px;
+}
+.form-container .form-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+}
+.form-input input[type="text"],
+.form-input input[type="submit"],
+.form-input input[type="email"],
+.form-input select{
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  height: 42px;
+  font-size: inherit;
+  margin-bottom: 18px;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.form-input input::placeholder{
+  color: #333333;
+}
+
+.form-input .group-checkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.form-input .checkbox-container{
+  display: flex;
+  gap: 5px;
+}
+
+.checkbox-container label{
+  text-align: center;
+  font-size: 13px;
+}
+
+.checkbox-container label:hover{
+  cursor: pointer;
+}
+
+.form-input input:focus{
+  border: 1px solid #ccc;
+}
+
+#bao-mat-checkbox,
+#du-hoc-checkbox{
+  font-size: .875em;
+  margin: 0;
+  
+}
+
+.width-100{
+  width: 100%;
+}
+
+#submit-form-contact{
+  width: 154px;
+  background-color: red;
+  color: #fff;
+}
+
+#submit-form-contact:hover{
+  cursor: pointer;
+}
+
+.checked-label{
+  font-weight: bold;
+}
+    
+    
+    </style>
+</head>
+<body>
+
+    <div class="img-banner">
+        <div class="into-banner">
+            <div class="title-banner-box">
+                <h1 class="title-banner">LÝ DO CHỌN ACET</h1>
+            </div>
+            <div class="menu-arr">
+                <div class="box-arrow box-arrow-home">
+                        <div class="triangle-top-down">
+                            <div class="arrow-right-top"></div>
+                            <div class="arrow-right-down"></div>
+                        </div>
+                        <a href="#" class="link-arrow">HOME</a>
+                        <div class="arrow-right"></div>
+                </div>
+                <div class="box-arrow">
+                    <div class="triangle-top-down">
+                        <div class="arrow-right-top"></div>
+                        <div class="arrow-right-down"></div>
+                    </div>
+                    <a href="#" class="link-arrow">LÝ DO CHỌN ACET</a>
+                    <div class="arrow-right"></div>
+                </div>
+            </div>
+        </div>
+        <img src="./img/ly-do-chon.jpg" width="100%">
+    </div>
+
+    <!-- main -->
+    <main class="main-center">
+        <div class="centered-text">
+            <h2 class="title-english-center">TRUNG TÂM TIẾNG ANH QUỐC TẾ HÀNG ĐẦU CHUYÊN GIẢNG DẠY CHƯƠNG TRÌNH ANH NGỮ HỌC THUẬT</h2>
+            <p>
+                Là nhà tiên phong với hơn 20 năm kinh nghiệm đào tạo độc quyền Anh ngữ Học thuật theo tiêu chuẩn của Úc tại Việt Nam, ACET là Trung tâm tiếng Anh quốc tế hàng đầu chuyên giảng dạy chương trình Anh ngữ Học thuật và Luyện thi IELTS để chuẩn bị nền tảng ngôn ngữ cho việc du học và kỹ năng học tập trong môi trường đại học quốc tế. 
+                ACET cũng cung cấp các khóa kỹ năng Tiếng Anh Học thuật chuyên biệt và Tiếng Anh Học thuật dành cho học sinh THCS.
+            </p>
+        </div>
+        <div class="list-items-co-hoi">
+            <div class="item-co-hoi">
+                <div class="img-item-co-hoi">
+                    <img src="./img/acet-quan-ly-boi-idp-education.jpg">
+                </div>
+                <div class="content-item-co-hoi">
+                    <div class="content-item-co-hoi-center">
+                        <h3>QUẢN LÝ BỞI TỔ CHỨC GIÁO DỤC QUỐC TẾ IDP EDUCATION</h3>
+                        <p>
+                            ACET được quản lý bởi IDP Education, tổ chức giáo dục quốc tế, có trụ sở chính tại Úc và có mặt tại hơn 32 quốc gia trên toàn cầu. IDP chuyên cung cấp các dịch vụ giảng dạy tiếng Anh và tư vấn du học, cũng như đồng sở hữu và tổ chức kỳ thi IELTS trên toàn thế giới.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-co-hoi">
+                <div class="img-item-co-hoi">
+                    <img src="./img/acet-giao-trinh-doc-quyen-UTS-INSEACH.jpg">
+                </div>
+                <div class="content-item-co-hoi">
+                    <div class="content-item-co-hoi-center">
+                        <h3>GIÁO TRÌNH ĐỘC QUYỀN TỪ UTS COLLEGE</h3>
+                        <p class="paragraph-stretch">
+                            Chương trình Anh ngữ Học thuật được chúng tôi giảng dạy độc quyền theo giáo trình của UTS College biên soạn và cập nhật.
+                        </p>
+                        <p>
+                            Chương trình không chỉ trang bị cho bạn nền tảng Anh ngữ vững chắc, chương trình Anh ngữ Học thuật của ACET còn giúp bạn hoàn thiện các kỹ năng cần thiết, nhờ đó tự tin hòa nhập, khẳng định bản thân trong môi trường du học và học tập quốc tế.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-co-hoi">
+                <div class="img-item-co-hoi">
+                    <img src="./img/acet-80-hoc-vien-dat-diem-ielts-6.0-tro-len.jpg">
+                </div>
+                <div class="content-item-co-hoi">
+                    <div class="content-item-co-hoi-center">
+                        <h3>80% HỌC VIÊN ĐẠT ĐIỂM IELTS TỪ 6.0 TRỞ LÊN</h3>
+                        <p>
+                            ACET tự hào với 80% học viên đạt điểm IELTS từ 6.0 trở lên, mức điểm mơ ước để bạn hoàn thành ước mơ du học, giành được các học bổng danh giá, tự tin với năng lực Anh ngữ Học thuật, từ đó thành công với cơ hội nghề nghiệp toàn cầu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-co-hoi">
+                <div class="img-item-co-hoi">
+                    <img src="./img/doi-ngu-giao-vien-chuyen-nghiep.jpg">
+                </div>
+                <div class="content-item-co-hoi">
+                    <div class="content-item-co-hoi-center">
+                        <h3>ĐỘI NGŨ GIÁO VIÊN CHUYÊN NGHIỆP</h3>
+                        <p>
+                            Đội ngũ giáo viên tại ACET đến từ các quốc gia Úc, Anh, Mỹ, Canada…, có thể được xem là đội ngũ tốt nhất trong lĩnh vực giảng dạy tiếng Anh tại Việt Nam hiện nay với chuyên môn được đào tạo bài bản, giàu kinh nghiệm và có chứng chỉ sư phạm uy tín đạt chuẩn quốc tế (TESOL, CELTA…). Được ACET tuyển chọn qua phỏng vấn theo quy chuẩn khiêm ngặt của tổ chức Kiểm định chất lượng giáo dục quốc tế NEAS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-co-hoi">
+                <div class="img-item-co-hoi">
+                    <img src="./img/lo-trinh-chuyen-tiep-hoc-tap-quoc-te.jpg">
+                </div>
+                <div class="content-item-co-hoi">
+                    <div class="content-item-co-hoi-center">
+                        <h3>LỘ TRÌNH CHUYỂN TIẾP HỌC TẬP QUỐC TẾ</h3>
+                        <p>
+                            Học tiếng Anh tại ACET định hướng cho bạn lộ trình học tập rõ ràng với khung quy chiếu quốc tế (IELTS, CEFR…) cùng quyền lợi liên thông trực tiếp vào các chương trình cao đẳng, đại học của nhiều trường Đại học tại Úc và thế giới.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-co-hoi">
+                <div class="img-item-co-hoi">
+                    <img src="./img/-du-hoc-thanh-cong-tai-uc.jpg">
+                </div>
+                <div class="content-item-co-hoi">
+                    <div class="content-item-co-hoi-center">
+                        <h3>DU HỌC THÀNH CÔNG ĐƯỢC HOÀN HỌC PHÍ ANH NGỮ TỪ CÁC TRƯỜNG ĐẠI HỌC HÀNG ĐẦU TẠI ÚC</h3>
+                        <p>
+                            Học tiếng Anh tại ACET học viên không những nhận được chứng chỉ Anh ngữ quốc tế mà còn có cơ hội nhận tài trợ học phí tiếng Anh có giá trị lên đến 2.500 AUD từ 4 trường đại học uy tín hàng đầu nước Úc: UTS Insearch (học viện đào tạo liên kết hàng đầu với University of Technology Sydney (UTS), Swinburne University of Technology, Queensland University of Technology và Deakin University.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="centered-text">
+            <h2 class="title-english-center">CHƯƠNG TRÌNH & LỘ TRÌNH</h2>
+            <img class="img-lo-trinh" src="./img/Pathway-AE_IELTS_FS-JAN-2023-1536x1086.jpg">
+        </div>
+    </main>
+
+    <!-- contact đăng kí tư vấn --> 
+    <div class="contact">
+        <div class="box-img-contact">
+            <img src="./img/dang-ky-hoc-acet-min.png" alt="">
+        </div>
+        <div class="form-container" >
+            <div class="title-form-sign-up">
+                <h3>ĐĂNG KÝ TƯ VẤN</h3>
+            </div>
+            <form class="form-input" action="process-form.php" method="post">
+                <input type="text" placeholder="Họ và tên" class="width-100" name="name">
+                <input type="text" placeholder="Tuổi (hỗ trợ tư vấn lộ trình học)" class="width-100" name="age">
+                <input type="text" placeholder="Số điện thoại" class="width-100" name="phone">
+                <input type="email" placeholder="Email" class="width-100" name="email">
+                <select class="width-100" name="location">
+                    <option value="1">Khu vực</option>
+                    <option value="2">Tp HCM</option>
+                    <option value="3">Hà Nội</option>
+                </select>
+                <div class="group-checkbox">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="bao-mat-checkbox">
+                        <label for="bao-mat-checkbox" id="bao-mat-checkbox-label">Tôi đồng ý các điều khoản và điều kiện bảo mật thông tin của ACET</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="du-hoc-checkbox">
+                        <label for="du-hoc-checkbox" id="du-hoc-checkbox-label">Tôi đồng ý nhận thông tin về du học và IELTS từ IDP Education</label>
+                    </div>
+                </div>
+                <input name="sign-in" type="submit" value="GỬI THÔNG TIN">
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        const checkboxBaoMat = document.getElementById('bao-mat-checkbox');
+        const labelCheckboxBaoMat = document.getElementById('bao-mat-checkbox-label');
+        const name_user = document.getElementById('name');
+        const age_user = document.getElementById('age');
+        const email_user = document.getElementById('email');
+        const phone_user = document.getElementById('phone_number');
+        const signIn = document.getElementById('sign-in');
+
+        checkboxBaoMat.addEventListener('change', function() {
+            if (checkboxBaoMat.checked) {
+                labelCheckboxBaoMat.classList.add('checked-label');
+            } else {
+                labelCheckboxBaoMat.classList.remove('checked-label');
+            }
+        });
+
+        const checkboxDuHoc = document.getElementById('du-hoc-checkbox');
+        const labelCheckboxDuHoc = document.getElementById('du-hoc-checkbox-label');
+        checkboxDuHoc.addEventListener('change', function() {
+            if (checkboxDuHoc.checked) {
+                labelCheckboxDuHoc.classList.add('checked-label');
+            } else {
+                labelCheckboxDuHoc.classList.remove('checked-label');
+            }
+        });
+
+        signIn.addEventListener('click', function(event) {
+            event.preventDefault();
+            let message = '';
+            if (name_user.value.trim() === "") {
+                message += "Hãy nhập đầy đủ tên của bạn\n";
+            }
+            if (age_user.value.trim() === "") {
+                message += "Hãy nhập tuổi của bạn\n";
+            }
+            if (email_user.value.trim() === "") {
+                message += "Hãy nhập email của bạn\n";
+            }
+            if (phone_user.value.trim() === "") {
+                message += "Hãy nhập số điện thoại của bạn\n";
+            }
+            if (message !== '') {
+                alert(message);
+                return;
+            }
+            alert("Cảm ơn bạn đã đăng ký tư vấn");
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>

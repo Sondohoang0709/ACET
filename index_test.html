@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+    body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .test_image {
+            height: 200px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .button, .comeback {
+            display: inline-block;
+            margin: 20px auto;
+            height: 50px;
+            background-color: rgb(218, 18, 18);
+            border-radius: 25px;
+            text-align: center;
+            width: 250px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            line-height: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover, .comeback:hover {
+            background-color: whitesmoke;
+            color: red;
+            cursor: pointer;
+        }
+
+        .section-container {
+            position: fixed;
+            width: 100%;
+            background-color: red;
+            padding: 10px 0;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .table_container {
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .image {
+            height: 200px;
+            width: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .list_content {
+            font-size: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .question_below_11, .question_above_11 {
+            text-align: center;
+            margin: 20px 0;
+            color: brown;
+        }
+
+        .test_container {
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        footer {
+            display: block;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: brown;
+        }
+
+        ol {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 0;
+            background-color: black;
+            color: blueviolet;
+        }
+
+        ol li {
+            margin: 0 10px;
+        }
+
+        ol li:hover ul {
+            display: block;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background-color: white;
+            list-style-type: none;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-item:hover ul {
+            display: block;
+        }
+
+        ul li {
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .final_buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .input-field {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    
+ <div class="table_container">            
+<table >
+    <tr class="image_part">    
+     <td>    
+<img class="image" src="https://png.pngtree.com/thumb_back/fh260/background/20210908/pngtree-college-entrance-examination-day-macro-smile-test-paper-exam-photography-picture-image_828042.jpg" alt=""> 
+</td> 
+
+<td class="table_content"> 
+   <ul class=" list_content ">    
+    <li> <h3>   Bạn đã biết trình độ tiếng anh hiện tại của mình chưa ?  </h3>     </li>
+    <li> Cùng tham gia bài kiểm tra Tiếng anh nhanh với The world để biết khả năng hiện tại của mình? </li>
+    <li> Bài kiểm tra gồm 25 câu hỏi với 2 phần chính :  </li>
+    <li> Điền vào chỗ trống trong bài đọc (10 câu)   </li>
+    <li>  Hoàn thành câu (15 câu)        </li>  
+
+  </ul> 
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class=" test_container ">
+<h3 class=" question_below_11  "> QUESTION 1 - 10</h3>
+<th>In this section you must type the word which best fits each space in the texts.  </th>
+<h3>The SYDNEY OPERA HOUSE </h3>
+<th>The Sydney Opera House is a very beautiful and important  building in Australia. It is one of the <input type="text">famous places in the country and millions of <input type="text">the opera house each year. Since it opened in 1973, it <input type="text"> many prizes for its design. It is amazing to <input type="text">its bright white walls above the blue water of Sydney Harbour. Many people think it shows how clever and creative Australians can be.</th>
+<br>
+<h3> THEN AND NOW</h3>
+<th>The construction of the Sydney Opera House was not quick. Building started <input type="text"> 2 March 1959 and it <input type="text"> many years to finish. Engineers spent over 4 years <input type="text">the roof, but it was <input type="text">finally complete in 1973. many Australians were upset by the cost and delays of the project, they were extremely happy about the final design.Today the Sydney Opera House 
+    thousands of shows every year. It is a cultural centre where people <input type="text"> enjoy concerts, plays, ballet and of course, the opera. Even people who do not enjoy the performing arts, love to come and admire its unique design.</th>
+<br><br>
+<h3 class="question_above_11  "> QUESTION 11-25 </h3>
+<p> In this section you must type the word or phrase which best completes each sentence </p>
+<p><th>11. To get to the hospital, go straight on <input type="text">the end of the street and then turn right. </th></p>
+<p> <th>12. My father intends <input type="text"> a new car this year. </th></p>
+<p><th>13. I’m not sure, but it <input type="text">rain later. </th></p>
+<p><th>14. Mary looks up <input type="text"> her sister because her sister is so kind. </th></p>
+<p><th>15. Sometimes it is difficult for children to <input type="text">their shoes, so their parents need to help them before they go </th></p>
+<p><th>16.Let’s consider <input type="text"> swimming for the next social event.<th></p>
+<p><th>17. In Vietnam, you can read <input type="text">news about the national football team. </th></p>
+<p><th>18. The new laws should help families save money so that all citizens have <input type="text"> future. </th></p>
+<p><th>19. We must be careful to reduce pollution, or it will <input type="text"> our environment dramatically. </th></p>
+<p><th>20. You should never <input type="text">a lie to your mother. </th></h5>
+<p><th>21. Exhibits in the museum have items which date <input type="text">more than 500 years. </th></p>
+<p><th>22. I don’t think Lucy was treated fairly. It seems like she really got a <input type="text">deal. </th></p>
+<p><th>23.You can listen to the radio, but please turn it <input type="text">so I can study. </th></p>
+<p><th>24. The weather will probably be fine tomorrow, but even <input type="text">it rains, we can still have a picnic. </th></p>
+<p><th>25. Jim is always ranting and <input type="text">about things which bother him.</th></p>
+
+</div>
+
+
+<div class="final_buttons ">       
+<div class="button"> HOÀN THÀNH BÀI THI         </div>
+
+<div class="comeback">             
+<a  href="home.html"> Quay lại     </a>
+ </div>
+</div>
+<script>   
+  document.addEventListener('DOMContentLoaded', function() {
+        const button = document.querySelector('.button');
+
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Cảm ơn bạn đã hoàn thành bài thi!");
+            window.location.reload();
+        });
+    });
+
+
+</script>
+</body>
+</html>
+
+ 

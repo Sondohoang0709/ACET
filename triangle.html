@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arrow-right {
+            width: 0;
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid green;
+        }
+
+        .arrow-right-top {
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid green;
+        }
+
+        .arrow-right-down {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid green;
+        }
+        .link-arrow{
+            text-decoration: none;
+            background-color: green;
+            color: #fff;
+            padding: 3px 10px;
+            font-size: 11px;
+        }
+        .box-arrow{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-arrow">
+        <div class="triangle-top-down">
+            <div class="arrow-right-top"></div>
+            <div class="arrow-right-down"></div>
+        </div>
+        <a href="#" class="link-arrow">HOME</a>
+        <div class="arrow-right"></div>
+    </div>
+</body>
+</html>
